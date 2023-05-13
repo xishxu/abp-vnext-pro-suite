@@ -47,14 +47,14 @@ jobs:
         with:
           context: aspnet-core/host/Lion.AbpSuite.HttpApi.Host
           push: true
-          tags: xishxu/XSXSuiteHost:${{ steps.vars.outputs.RELEASE_VERSION }}
+          tags: xishxu/xsx.suite.host:${{ steps.vars.outputs.RELEASE_VERSION }}
 
       - name: Push Lion.AbpSuite.DbMigrator Image
         uses: docker/build-push-action@v2
         with:
           context: aspnet-core/src/Lion.AbpSuite.DbMigrator
           push: true
-          tags: xishxu/XSXSuiteMigrator:${{ steps.vars.outputs.RELEASE_VERSION }}
+          tags: xishxu/xsx.suite.migrator:${{ steps.vars.outputs.RELEASE_VERSION }}
 
   vben28:
     runs-on: ubuntu-latest
@@ -97,4 +97,4 @@ jobs:
         with:
           context: vben28
           push: true
-          tags: xishxu/XSXSuiteVben:${{ steps.vars.outputs.RELEASE_VERSION }}
+          tags: xishxu/xsx.suite.vben:${{ steps.vars.outputs.RELEASE_VERSION }}
