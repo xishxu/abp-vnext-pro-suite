@@ -14,7 +14,7 @@
         <PackageReference Update="Volo.Abp.BackgroundJobs.HangFire" Version="7.1.1"/>
         <PackageReference Update="Volo.Abp.AspNetCore.SignalR" Version="7.1.1"/>
         <PackageReference Update="Volo.Abp.TestBase" Version="7.1.1"/>
-        <PackageReference Update="Volo.Abp.EntityFrameworkCore.MySQL" Version="7.1.1"/>
+        <PackageReference Update="Volo.Abp.EntityFrameworkCore.SqlServer" Version="7.1.1"/>
         <PackageReference Update="Volo.Abp.PermissionManagement.EntityFrameworkCore" Version="7.1.1"/>
         <PackageReference Update="Volo.Abp.SettingManagement.EntityFrameworkCore" Version="7.1.1"/>
         <PackageReference Update="Volo.Abp.Identity.EntityFrameworkCore" Version="7.1.1"/>

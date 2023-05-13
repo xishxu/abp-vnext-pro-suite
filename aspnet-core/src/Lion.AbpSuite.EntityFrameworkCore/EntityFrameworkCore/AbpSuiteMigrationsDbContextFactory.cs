@@ -11,7 +11,7 @@ namespace Lion.AbpSuite.EntityFrameworkCore
             var configuration = BuildConfiguration();
 
             var builder = new DbContextOptionsBuilder<AbpSuiteDbContext>()
-                .UseMySql(configuration.GetConnectionString("Default"), MySqlServerVersion.LatestSupportedServerVersion);
+                .UseSqlServer(configuration.GetConnectionString("Default"));
 
             return new AbpSuiteDbContext(builder.Options);
         }

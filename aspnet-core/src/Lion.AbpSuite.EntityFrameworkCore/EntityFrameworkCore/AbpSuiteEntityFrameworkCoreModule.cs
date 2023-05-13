@@ -5,7 +5,7 @@ namespace Lion.AbpSuite.EntityFrameworkCore
 {
     [DependsOn(
         typeof(AbpSuiteDomainModule),
-        typeof(AbpEntityFrameworkCoreMySQLModule),
+        typeof(AbpEntityFrameworkCoreSqlServerModule),
         typeof(BasicManagementEntityFrameworkCoreModule),
         typeof(NotificationManagementEntityFrameworkCoreModule)
     )]
@@ -29,7 +29,7 @@ namespace Lion.AbpSuite.EntityFrameworkCore
             {
                 /* The main point to change your DBMS.
                  * See also AbpSuiteMigrationsDbContextFactory for EF Core tooling. */
-                options.UseMySQL();
+                options.UseSqlServer();
             });
         }
     }
