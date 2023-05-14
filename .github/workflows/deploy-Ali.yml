@@ -1,4 +1,4 @@
-name: 部署
+name: 部署阿里
 on:
   push:
     tags:
@@ -30,6 +30,8 @@ jobs:
         id: vars
         run: echo ::set-output name=RELEASE_VERSION::$(echo ${GITHUB_REF:10})
 
+      - name: docker login
+        run: docker login --username=${{ secrets.ALI_USERNAME }} --password=${{ secrets.ALI_PASSWORD }} registry.cn-hangzhou.aliyuncs.com
       # docker login
       - name: Login to Ali
         uses: docker/login-action@v1
